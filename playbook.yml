@@ -1,0 +1,8 @@
+- name: Create Directory
+  hosts: all
+  become: true
+  tasks:
+          - name: Create a File
+            file:
+                    path: /tmp/Gitfile
+                    state: touch
